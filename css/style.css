@@ -1,0 +1,103 @@
+html, body { font-size: 16px; margin: 0px; padding: 0px; }
+
+@media screen and (max-width: 768px) { html, body { font-size: 12px; } }
+
+@media screen and (max-width: 480px) { html, body { font-size: 10px; } }
+
+@media screen and (max-width: 320px) { html, body { font-size: 8px; } }
+
+* { outline: 0 !important; }
+
+*:focus *:hover, *:visited { outline: 0 !important; }
+
+a { text-decoration: none; outline: 0 !important; }
+
+a:hover, a:active, a:visited { outline: 0 !important; }
+
+a img { border: none; outline: 0 !important; }
+
+a[x-apple-data-detectors], p[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0px; padding: 0px; }
+
+ul { list-style: none; }
+
+div, nav, article, section, header, footer, aside { display: block; box-sizing: border-box; }
+
+input, textarea { box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #23349c; opacity: 1; }
+
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */ color: #23349c; opacity: 1; }
+
+input::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */ color: #23349c; opacity: 1; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #23349c; opacity: 1; }
+
+input::-ms-clear { display: none !important; }
+
+input[type="number"] { -webkit-appearance: textfield !important; -moz-appearance: textfield !important; appearance: textfield !important; }
+
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+input[type="submit"] { cursor: pointer; }
+
+select { box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+select::-ms-expand { display: none !important; }
+
+.page-age-gate { font-family: 'Arial'; background-image: url("../images/bg/bg_main.jpg"); background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; overflow-x: hidden; margin-top: 0px; color: #fff; }
+
+.page-age-gate #age_gate { display: table; height: 100vh; width: 100%; background-repeat: no-repeat; background-size: 100%; padding-top: 30px; }
+
+.page-age-gate #age_gate #age_gate_logo { display: table-row; text-align: center; }
+
+.page-age-gate #age_gate #age_gate_logo img { width: 100px; }
+
+.page-age-gate #age_gate #age_gate_container { display: table-row; position: relative; height: 100%; background-color: transparent; width: 100%; text-align: center; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget { position: absolute; top: 10%; left: 50%; -webkit-transform: translate(-50%, -10%); transform: translate(-50%, -10%); -ms-transform: translate(-50%, -10%); }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message { margin-bottom: 10px; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message h1 { font-size: 4.5rem; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message p { font-size: 1.2rem; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_gate_error_message p { color: red; font-size: 1.2rem; margin-bottom: 10px; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form { width: 320px; margin: 0 auto; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-textfield { display: inline-block; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-day, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-month { width: 29%; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-month { margin: 0 1%; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-year { width: 39%; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"], .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"] { width: 100%; text-align: center; color: #23349c; border: none; line-height: 40px; font-size: 40px; height: 70px; box-shadow: inset 1px 2px 2px #999; font-weight: bold; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select { width: 100%; margin: 10px 0px; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select label { margin-bottom: 5px; font-size: 1.2rem; display: block; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select { padding: 0px 10px 3px; width: 100%; border: none; box-shadow: inset 1px 2px 2px #999; font-size: 26px; color: #23349c; height: 40px; background-image: url("../images/icons/arrow-down.png"); background-position: 94% center; background-size: contain; background-repeat: no-repeat; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me { width: 100%; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label { display: inline-block; cursor: pointer; position: relative; padding-left: 30px; font-size: 13px; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label:before { content: ""; display: inline-block; width: 20px; height: 13px; position: absolute; left: 0; bottom: 1px; background-color: #fff; box-shadow: inset 1px 2px 2px #999; color: #23349c; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox] { display: none; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox]:checked + label:before { content: "\2713"; font-size: 12px; text-align: center; line-height: 18px; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"] { padding: 5px 20px; margin-top: 20px; background-color: #23349c; color: white; min-width: 85px; font-size: 21px; border: none; }
+
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"]:active { position: relative; top: 3px; box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), inset 0 0px 3px rgba(0, 0, 0, 0.9); }
+
+.page-age-gate #age_gate #age_gate_footer { text-align: center; }
+
+.page-age-gate #age_gate #age_gate_footer p { color: #fff; text-transform: uppercase; margin: 10px 0px; font-size: 1rem; }

@@ -1,0 +1,160 @@
+.page-age-gate{
+	font-family: 'Arial';
+	background-image: url('../images/bg/bg_main.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow-x:hidden; 
+	margin-top: 0px;
+	color: #fff;
+	#age_gate{
+		display: table;
+		height: 100vh;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		padding-top: 30px;
+		#age_gate_logo{
+			display: table-row;
+			text-align: center;
+			img{
+				width: 100px;
+			}
+		}
+		#age_gate_container{	
+			display: table-row;
+			position: relative;
+			height: 100%;
+			background-color: transparent;
+			width: 100%;
+			text-align: center;
+			#age_gate_widget{
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform:translate(-50%, -10%);
+				-ms-transform:translate(-50%, -10%);
+				#age_checker_header_message{
+					margin-bottom: 10px;
+					h1{
+						font-size: 4.5rem;
+					}
+					p{
+						font-size: 1.2rem;
+					}
+				}
+				#age_gate_error_message{
+					p{
+						color: red;
+						font-size: 1.2rem;
+						margin-bottom: 10px;
+					}
+				}
+				form#age_gate_form{
+					width: 320px;
+					margin:0 auto;
+					
+					.form-type-textfield{
+						display: inline-block;
+					}
+					.form-item-day,.form-item-month{
+						width: 29%;
+					}
+					.form-item-month{
+						margin:0 1%; 
+					}
+					.form-item-year{
+						width: 39%;
+					}
+					input[type="number"], input[type="tel"]{
+						width: 100%;
+						text-align: center;
+						color: $maincolor;
+						border:none; 
+					    line-height: 40px;
+					    font-size: 40px;
+					    height: 70px;
+					    box-shadow: inset 1px 2px 2px #999;
+					    font-weight: bold;
+					}
+					.form-type-select{
+						width: 100%;
+						margin:10px 0px; 
+						label{
+							margin-bottom: 5px;
+							font-size: 1.2rem;
+							display: block;
+						}
+						select{
+							padding:0px 10px 3px; 
+							width: 100%;
+							border:none;
+							box-shadow: inset 1px 2px 2px #999;
+							font-size: 26px;
+							color: $maincolor;
+						    height: 40px; 
+						    background-image: url('../images/icons/arrow-down.png');
+						    background-position: 94% center;
+						    background-size: contain;
+						    background-repeat: no-repeat;
+						}
+					}
+					.form-type-checkbox.form-item-remember-me{
+						width: 100%;
+		                label {
+		                   display: inline-block;
+						   cursor: pointer;
+						   position: relative;
+						   padding-left: 30px;
+						   font-size: 13px;
+		                    &:before {
+		                   		content: "";
+							  	display: inline-block;
+								width: 20px;
+								height: 13px;
+								position: absolute;
+								left: 0;
+								bottom: 1px;
+								background-color: #fff;
+		                        box-shadow: inset 1px 2px 2px #999;
+		                        color: $maincolor;
+		                    }
+		                }
+		                input[type=checkbox] {
+		                    display: none;
+		                    &:checked + label:before {
+								content: "\2713";
+								font-size: 12px;
+								text-align: center;
+								line-height: 18px;		                    
+							}
+		                }
+					}
+					input[type="submit"]{
+						padding: 5px 20px;
+						margin-top: 20px;
+						background-color:#23349c;
+		                color: white;
+		                min-width: 85px;
+		                font-size: 21px;
+		                border:none;
+						&:active{
+							position: relative; 
+							top: 3px;
+						    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+						} 
+					}
+				}
+			}
+		}
+		#age_gate_footer{
+			text-align: center;
+			p{
+				color: #fff;
+				text-transform: uppercase;
+				margin:10px 0px;
+				font-size: 1rem 
+			}
+		}
+	}
+}

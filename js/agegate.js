@@ -25,7 +25,10 @@
                 'submitBtnTxt'          : 'ENTER SITE',
                 'footerMsg'             : 'copyright © year brand name. all rights reserved',
             };
-        if (settings){$.extend(config, settings);}
+        if (settings)
+        {
+            $.extend(config, settings);
+        }
  
         // Build the container and html structure
         that.setHtml = function()

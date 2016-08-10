@@ -1,2 +1,1 @@
-# Age-Gate
-# jQuery-Age-Gate
+#jQuery-Age-Gate

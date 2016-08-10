@@ -1,4 +1,5 @@
 (function($){
+
     $.fn.ageGate = function(settings)
     {
 
@@ -100,7 +101,7 @@
         //underage 
         that.illegalAge = function()
         {
-            if($('body').hasClass('page-age-gate'))
+            if(that.hasClass('page-age-gate'))
             {
                 
                 $('#age_gate_error_message').html('<p>'+config.underage_msg+'</p>');
@@ -110,7 +111,7 @@
                 error = true;
             }
 
-            setCookie('age_gate','underage', 1);
+            setCookie('age_gate','underage', 2);
 
             setTimeout(function(){
                 window.location.href = config.underage_url;
@@ -136,18 +137,6 @@
             }
         }
 
-        //Redicect to Agegate
-        that.redirectToAgegate = function()
-        {
-
-            if(!$('body').hasClass('page-age-gate')){
-                window.location.href = config.ageGate_url;
-            }
-
-            return;
-
-        }
-
         //Enable autotab
         that.autoTab = function(el)
         {
@@ -169,7 +158,7 @@
             }
 
         }
-
+        //Age Calculation
         that.AgeCheck = function(day, month, year)
         {
         
@@ -187,32 +176,6 @@
             $.each( config.selectOptions, function( key, value ) {
                 $('#age_gate_form select').append('<option value="'+key+'">'+value+'</option>');
             });
-        }
-
-        that.checkOk = function()
-        {
-            if(that.getCookie('age_gate') && that.getCookie('age_gate') === 'underage'){
-
-                if(localStorage.getItem('remember_me')){
-                    localStorage.removeItem('remember_me');
-                }
-                
-                that.illegalAge();
-
-                return;
-
-            }
-            else if((localStorage.getItem('remember_me') && localStorage.getItem('remember_me')==='0' && that.getCookie('age_gate') !== 'legal') || (!localStorage.getItem('remember_me') && that.getCookie('age_gate') !== 'legal')){
-                
-                // Invalid Cookie, delete it.
-                that.setCookie('age_gate', null);
-                that.redirectToAgegate();
-            
-            }
-            else if(!window.location.href.indexOf(config.ageGate_url) > -1 && that.getCookie('age_gate') && that.getCookie('age_gate') === 'legal'){
-
-            }
-
         }
 
         //Chek remember me 
@@ -386,17 +349,42 @@
             });
         }
 
+        that.storageCookyReset = function()
+        {
+            localStorage.removeItem('remember_me');
+            that.setCookie('age_gate',null);
+        }
+
+        that.checkAgeOk = function()
+        {
+            if(that.getCookie('age_gate') && that.getCookie('age_gate') === 'underage'){
+
+                if(localStorage.getItem('remember_me')){
+                    localStorage.removeItem('remember_me');
+                }
+                
+                that.illegalAge();
+
+                return;
+            }
+        }
+
         that.init = function()
         {
+            //that.storageCookyReset();
+
+
+
+
             that.addClass('page-age-gate').prepend(that.setHtml());
 
             that.setSelectOptions();
 
-            that.checkOk();
-            
-            that.checkRememberMe();
-
             that.formReset();
+
+            that.checkAgeOk();
+
+            that.checkRememberMe();
             
             that.mobileKeyboard();
            

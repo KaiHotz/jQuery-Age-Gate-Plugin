@@ -58,48 +58,8 @@ div,nav,article,section,header,footer,aside {
 	box-sizing: border-box;
 }
 
-input,textarea{
-	box-sizing:border-box;
-	appearance:none; 
-	&::-webkit-input-placeholder {
-		color: $maincolor;
-		opacity: 1;
-	}
-	&:-moz-placeholder { /* Firefox 18- */
-		color: $maincolor;
-		opacity: 1;
-	}
-	&::-moz-placeholder { /* Firefox 19+ */
-		color: $maincolor;
-		opacity: 1;
-	}
-	&:-ms-input-placeholder{
-		color: $maincolor;
-		opacity: 1 ;
-	}
-}
-
 input{
 	&::-ms-clear { 
 		display: none !important; 
-	}
-}
-
-input[type="number"]{
-	appearance: textfield !important;
-	&::-webkit-inner-spin-button {
-	    -webkit-appearance: none;
-	    margin: 0;
-	}
-}
-input[type="submit"]{
-	cursor: pointer;
-}
-
-select{
-	box-sizing:border-box;
-	appearance:none; 
-	&::-ms-expand {
-    	display: none !important;
 	}
 }

@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('default', ()=> {
-  gulp.src('scss/style.scss')
+  gulp.src('scss/agegate.scss')
     .pipe(sass({
         outputStyle: 'compact',
         sourceComments: false

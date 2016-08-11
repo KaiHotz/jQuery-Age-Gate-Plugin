@@ -1,12 +1,24 @@
 .page-age-gate{
 	font-family: 'Arial';
-	background-image: url('../images/bg/bg_main.jpg');
+	background-image: url($bg_image);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow-x:hidden; 
 	margin-top: 0px;
 	color: #fff;
+	font-size: 16px;
+	margin:0px;
+	padding:0px; 
+	@media screen and (max-width:768px){
+		font-size:12px;
+	}
+	@media screen and (max-width:480px){
+		font-size:10px;
+	}
+	@media screen and (max-width:320px){
+		font-size:8px;
+	}
 	#age_gate{
 		display: table;
 		height: 100vh;
@@ -67,6 +79,8 @@
 						width: 39%;
 					}
 					input[type="number"], input[type="tel"]{
+						box-sizing:border-box;
+						appearance: textfield !important;
 						width: 100%;
 						text-align: center;
 						color: $maincolor;
@@ -76,6 +90,26 @@
 					    height: 70px;
 					    box-shadow: inset 1px 2px 2px #999;
 					    font-weight: bold;
+					    &::-webkit-input-placeholder {
+							color: $maincolor;
+							opacity: 1;
+						}
+						&:-moz-placeholder { /* Firefox 18- */
+							color: $maincolor;
+							opacity: 1;
+						}
+						&::-moz-placeholder { /* Firefox 19+ */
+							color: $maincolor;
+							opacity: 1;
+						}
+						&:-ms-input-placeholder{
+							color: $maincolor;
+							opacity: 1 ;
+						}
+						&::-webkit-inner-spin-button {
+						    -webkit-appearance: none;
+						    margin: 0;
+						}
 					}
 					.form-type-select{
 						width: 100%;
@@ -86,6 +120,8 @@
 							display: block;
 						}
 						select{
+							box-sizing:border-box;
+							appearance:none; 
 							padding:0px 10px 3px; 
 							width: 100%;
 							border:none;
@@ -97,6 +133,9 @@
 						    background-position: 94% center;
 						    background-size: contain;
 						    background-repeat: no-repeat;
+						    &::-ms-expand {
+						    	display: none !important;
+							}
 						}
 					}
 					.form-type-checkbox.form-item-remember-me{
@@ -131,6 +170,9 @@
 		                }
 					}
 					input[type="submit"]{
+						cursor: pointer;
+						box-sizing:border-box;
+						appearance:none; 
 						padding: 5px 20px;
 						margin-top: 20px;
 						background-color:#23349c;

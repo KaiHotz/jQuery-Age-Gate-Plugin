@@ -7,7 +7,7 @@ Required by some content providers for mature content.
 Uses Cookies and localstorage.
 [Age Gate](https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin)
 
- by Kai Hotz AKA SpecialKcl https://github.com/SpecialKcl
+ by Kai Hotz AKA [SpecialKcl](https://github.com/SpecialKcl) 
 
 ## Useage
 

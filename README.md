@@ -1,16 +1,17 @@
-#jQuery-Age-Gateç
+# jQuery Age Gate Plugin
 
  jQuery Age Gate v1.0.0
 
- Very configuralable Aage verification "Age Gate or agegate" plugin. 
- Required by some content providers for mature content.
- Uses Cookies and localstorage
- https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin
+Very configuralable Aage verification "Age Gate or agegate" plugin. 
+Required by some content providers for mature content.
+Uses Cookies and localstorage.
+[Age Gate](https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin)
 
  by Kai Hotz AKA SpecialKcl https://github.com/SpecialKcl
 
- Useage:
- 
+ ## Useage
+
+```javascript
    $('body').ageGate({
        'leagal_age'            : 18,
        'required_fields_msg'   : 'All Fields are mandatory',
@@ -32,3 +33,5 @@
        'submitBtnTxt'          : 'ENTER SITE',
        'footerMsg'             : 'copyright © year brand name. all rights reserved',
    });
+
+   ```

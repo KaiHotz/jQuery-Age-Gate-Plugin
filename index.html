@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <title>Age-Gate</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> 
-<script src="js/agegate.js"></script>
 </head>
 <body class="front">
 	<div id="container" style="text-align:center">
@@ -13,4 +11,14 @@
     <h3>You pased the Age Gate</h3>
     </div>
 </body>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/agegate.js"></script>
+	<script>
+
+	jQuery(document).ready(function($)
+	{
+		$('body').ageGate();    	
+	});
+
+	</script>
 </html>

@@ -19,7 +19,7 @@
                 'placeholderDay'        : 'DD',
                 'placeholderMonth'      : 'MM',
                 'placeholderYear'       : 'YYYY',
-                'selectTitle'           : 'Select an Option',
+                'selectTitle'           : 'Select a Option',
                 'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
                 'checkBoxLabel'         : 'Remember me the next time',
                 'submitBtnTxt'          : 'ENTER SITE',
@@ -372,32 +372,44 @@
             }
         }
 
+        that.getDomain = function()
+        {
+            return $(location).attr('hostname');
+        }
+
+        that.buildAgegate = function()
+        {
+            that.addClass('page-age-gate').prepend(that.setHtml());
+            that.setSelectOptions();
+            that.formReset();
+            that.checkAgeOk();
+            that.checkRememberMe();                    
+            that.mobileKeyboard();                   
+            that.placeholderReset();
+            that.numeriValidation();
+            that.dateValidations();                    
+            that.ageGateSubmit();
+        }
+
         that.init = function()
         {
-            //that.storageCookyReset();
-
-
-
-
-            that.addClass('page-age-gate').prepend(that.setHtml());
-
-            that.setSelectOptions();
-
-            that.formReset();
-
-            that.checkAgeOk();
-
-            that.checkRememberMe();
-            
-            that.mobileKeyboard();
-           
-            that.placeholderReset();
-
-            that.numeriValidation();
-
-            that.dateValidations();
-            
-            that.ageGateSubmit();
+            if(window.location == 'http://'+that.getDomain()+'/'+config.ageGate_url)
+            {
+                if(that.getCookie('age_gate') != '' && 
+                   that.getCookie('age_gate') != 'null' && 
+                   that.getCookie('age_gate') != 'underage')
+                {
+                   window.location = 'http://'+that.getDomain();
+                }
+                else
+                {
+                    that.buildAgegate();  
+                }                   
+            }
+            else if(that.getCookie('age_gate') === '' || that.getCookie('age_gate') == 'null')
+            {
+               window.location = 'http://'+that.getDomain()+'/'+config.ageGate_url;
+            }
         }
 
         that.init();

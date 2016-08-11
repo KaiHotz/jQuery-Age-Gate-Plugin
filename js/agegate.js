@@ -342,7 +342,7 @@
                 //Redirect if all is OK
                 if(error==false){
 
-                    that.setCookie('age_gate','legal', 1);
+                    that.setCookie('age_gate','legal',0);
 
                     that.remeberMe();
                     

@@ -12,6 +12,8 @@ Uses Cookies and localstorage.
 ## Useage
 
 ```javascript
+jQuery(document).ready(function($)
+{
    $('body').ageGate({
        'leagal_age'            : 18,
        'required_fields_msg'   : 'All Fields are mandatory',
@@ -33,4 +35,5 @@ Uses Cookies and localstorage.
        'submitBtnTxt'          : 'ENTER SITE',
        'footerMsg'             : 'copyright © year brand name. all rights reserved',
    });
+});
 ```

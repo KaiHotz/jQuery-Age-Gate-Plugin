@@ -9,7 +9,7 @@ Uses Cookies and localstorage.
 
  by Kai Hotz AKA [SpecialKcl](https://github.com/SpecialKcl) 
 
-## Useage
+## Useage:
 
 ```javascript
 jQuery(document).ready(function($)

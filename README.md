@@ -9,7 +9,7 @@ Uses Cookies and localstorage.
 
  by Kai Hotz AKA SpecialKcl https://github.com/SpecialKcl
 
- ## Useage
+## Useage
 
 ```javascript
    $('body').ageGate({
@@ -33,5 +33,4 @@ Uses Cookies and localstorage.
        'submitBtnTxt'          : 'ENTER SITE',
        'footerMsg'             : 'copyright © year brand name. all rights reserved',
    });
-
-   ```
+```

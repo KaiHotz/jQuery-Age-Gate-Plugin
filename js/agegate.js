@@ -412,8 +412,6 @@
             }  
         }
 
-
-
         that.buildAgegate = function()
         {
             that.addClass('page-age-gate').prepend(that.setHtml());

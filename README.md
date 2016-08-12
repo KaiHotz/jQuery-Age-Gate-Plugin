@@ -9,7 +9,29 @@ Uses Cookies and localstorage.
 
  by Kai Hotz AKA [SpecialKcl](https://github.com/SpecialKcl) 
 
-## Useage:
+## How to Use:
+
+### 1. Load jQuery and include Age Gate Plugin plugin files
+
+To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and jQuery 1.7 or higher scripts are included.
+
+```htnml
+<!-- Important Age Gate Plugin stylesheet -->
+<link rel="stylesheet" href="css/agegate.css">
+
+<!--  jQuery 1.7+  -->
+<script src="jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/agegate.js"></script>
+```
+
+
+### 2. Call the plugin
+
+Now call the Age Gate initializer function and your Age verification page is ready.
+Since the cookie and localstorage verifiction for the Legal Age and the Remember Me is handeld on the client side,
+I is important to call the initializer on the <body> tag  in all the pages for your site.
 
 ```javascript
 jQuery(document).ready(function($)

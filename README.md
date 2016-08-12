@@ -19,7 +19,7 @@ To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and 
 <!-- Important Age Gate Plugin stylesheet -->
 <link rel="stylesheet" href="css/agegate.css">
 
-<!--  jQuery 1.7+  -->
+<!--  jQuery 1.9+  -->
 <script src="jquery-1.9.1.min.js"></script>
  
 <!-- Include js plugin -->

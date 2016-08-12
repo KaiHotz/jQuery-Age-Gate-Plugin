@@ -34,9 +34,10 @@ Since the cookie and localstorage verifiction for the Legal Age and the Remember
 It is important to call the initializer on the 'body' tag  in every single pages of your site.
 
 ```javascript
-jQuery(document).ready(function($)
-{
+jQuery(document).ready(function($){
+
    $('body').ageGate();
+
 });
 ```
 

@@ -93,7 +93,7 @@ jQuery(document).ready(function($)
        'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
        'checkBoxLabel'         : 'Remember me the next time',
        'submitBtnTxt'          : 'ENTER SITE',
-       'footerMsg'             : 'copyright © year brand name. all rights reserved', //Footer text
+       'footerMsg'             : 'copyright © year brand name. all rights reserved',
    });
 });
 ```

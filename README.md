@@ -13,7 +13,7 @@ Uses Cookies and localstorage.
 
 ### 1. Load jQuery and include Age Gate Plugin plugin files
 
-To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and jQuery 1.7 or higher scripts are included.
+To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and jQuery 1.9 or higher scripts are included.
 
 ```htnml
 <!-- Important Age Gate Plugin stylesheet -->

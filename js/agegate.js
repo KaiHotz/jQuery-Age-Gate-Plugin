@@ -54,7 +54,7 @@
                 'placeholderDay'        : 'DD',
                 'placeholderMonth'      : 'MM',
                 'placeholderYear'       : 'YYYY',
-                'selectTitle'           : 'Select a Option',
+                'selectTitle'           : 'Select an Option',
                 'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
                 'checkBoxLabel'         : 'Remember me the next time',
                 'submitBtnTxt'          : 'ENTER SITE',

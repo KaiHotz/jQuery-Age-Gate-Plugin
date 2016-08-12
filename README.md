@@ -36,26 +36,63 @@ It is important to call the initializer on the 'body' tag  in every single pages
 ```javascript
 jQuery(document).ready(function($)
 {
+
+   $('body').ageGate();
+
+});
+```
+
+## Customizing
+
+| Variable              | Default                                                               | Type   | Description                                      |
+| --------------------- |:---------------------------------------------------------------------:| ------:| ------------------------------------------------:|
+| `leagal_age`          | 18                                                                    | int    | Minimum age to pass the age verification         |
+| `required_fields_msg` | 'All Fields are mandatory'                                            | string | Error message for all requiered fields           |
+| `underage_msg`        | 'You have to be over 18 to enter this site'                           | string | Error message if visitor i minor the minimum age |
+| `underage_url`        | 'http://google.com',                                                  | string | Any URL for minors to be redirected              |
+| `site_url`            | 'index.html'                                                          | string | Your site index page                             |
+| `ageGate_url`         | 'agegate.html'                                                        | string | URL for the page where the Age Gate is shown     |
+| `logo`                | 'images/logos/logo.png'                                               | string | URL for your Logo images                         |
+| `title`               | 'AGE GATE'                                                            | string | Title to be shown on the Age Gate pages          |
+| `subtitle_1`          | 'You have to be over 18 to access this site'                          | string | First subtitle                                   |
+| `subtitle_2`          | 'Please enter your Date of Birth'                                     | string | Second subtitle                                  |
+| `formAction`          | ''                                                                    | string | Action for the form submition , optional         |
+| `placeholderDay`      | 'DD'                                                                  | string | Placeholder for the Day field                    |
+| `placeholderMonth`    | 'MM'                                                                  | string | Placeholder for the Month field                  |
+| `placeholderYear`     | 'YYYY'                                                                | string | Placeholder for the Year field                   |
+| `selectTitle`         | 'Select an Option'                                                    | string | Placeholder drop down selecter                   |
+| `selectOptions`       | {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'} | array  | Key=>Value vor the select options                |
+| `checkBoxLabel`       | 'Remember me the next time'                                           | string | Lable for the remember me checkbox               |
+| `submitBtnTxt`        | 'ENTER SITE'                                                          | string | Submit button text                               |
+| `footerMsg`           | 'copyright © year brand name. all rights reserved'                    | string | Footer text                                      |
+
+
+## Defaults
+
+```javascript
+jQuery(document).ready(function($)
+{
    $('body').ageGate({
-       'leagal_age'            : 18, //minimum age to pass the age verification
-       'required_fields_msg'   : 'All Fields are mandatory', //Error message for all requiered fields
-       'underage_msg'          : 'You have to be over 18 to enter this site', //Error message if visitor i minor the minimum age
-       'underage_url'          : 'http://google.com', //Any URL for minors to be redirected
-       'site_url'              : 'index.html', //Your site index page
-       'ageGate_url'           : 'agegate.html', //URL for the page where the Age Gate is shown
-       'logo'                  : 'images/logos/logo.png', //URL for your Logo image
-       'title'                 : 'AGE GATE', //Title to be shown on the Age Gate page
-       'subtitle_1'            : 'You have to be over 18 to access this site', // First subtitle
-       'subtitle_2'            : 'Please enter your Date of Birth', //Second Subtitle
-       'formAction'            : '', //Action for the form submition , optional
-       'placeholderDay'        : 'DD', //Placeholder for the Day field
-       'placeholderMonth'      : 'MM', //Placeholder for the Month field
-       'placeholderYear'       : 'YYYY', //Placeholder for the Year field
-       'selectTitle'           : 'Select a Option', //Placeholder drop down select option
-       'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'}, //Key,Value vor the select options
-       'checkBoxLabel'         : 'Remember me the next time', // Lable for the remember me checkbox
-       'submitBtnTxt'          : 'ENTER SITE', //SUbmit button text
+       'leagal_age'            : 18,
+       'required_fields_msg'   : 'All Fields are mandatory',
+       'underage_msg'          : 'You have to be over 18 to enter this site', 
+       'underage_url'          : 'http://google.com', 
+       'site_url'              : 'index.html',
+       'ageGate_url'           : 'agegate.html',
+       'logo'                  : 'images/logos/logo.png', 
+       'title'                 : 'AGE GATE', 
+       'subtitle_1'            : 'You have to be over 18 to access this site', 
+       'subtitle_2'            : 'Please enter your Date of Birth', 
+       'formAction'            : '',
+       'placeholderDay'        : 'DD',
+       'placeholderMonth'      : 'MM',
+       'placeholderYear'       : 'YYYY',
+       'selectTitle'           : 'Select a Option',
+       'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
+       'checkBoxLabel'         : 'Remember me the next time',
+       'submitBtnTxt'          : 'ENTER SITE',
        'footerMsg'             : 'copyright © year brand name. all rights reserved', //Footer text
    });
 });
 ```
+

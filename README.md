@@ -42,7 +42,9 @@ jQuery(document).ready(function($){
 ```
 
 ## Customizing
+
 ### 1. Options
+
 All of the options below are available to customize Age Gate Plugin.
 
 | Variable              | Default                                                               | Type   | Description                                     |
@@ -69,32 +71,30 @@ All of the options below are available to customize Age Gate Plugin.
 
 
 ### 2. Defaults
+
 Age Gate Plugin default settings
 
 ```javascript
-jQuery(document).ready(function($)
-{
-   $('body').ageGate({
-       'leagal_age'            : 18,
-       'required_fields_msg'   : 'All Fields are mandatory',
-       'underage_msg'          : 'You have to be over 18 to enter this site', 
-       'underage_url'          : 'http://google.com', 
-       'site_url'              : 'index.html',
-       'ageGate_url'           : 'agegate.html',
-       'logo'                  : 'images/logos/logo.png', 
-       'title'                 : 'AGE GATE', 
-       'subtitle_1'            : 'You have to be over 18 to access this site', 
-       'subtitle_2'            : 'Please enter your Date of Birth', 
-       'formAction'            : '',
-       'placeholderDay'        : 'DD',
-       'placeholderMonth'      : 'MM',
-       'placeholderYear'       : 'YYYY',
-       'selectTitle'           : 'Select a Option',
-       'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
-       'checkBoxLabel'         : 'Remember me the next time',
-       'submitBtnTxt'          : 'ENTER SITE',
-       'footerMsg'             : 'copyright © year brand name. all rights reserved',
-   });
+$('body').ageGate({
+      'leagal_age'            : 18,
+      'required_fields_msg'   : 'All Fields are mandatory',
+      'underage_msg'          : 'You have to be over 18 to enter this site', 
+      'underage_url'          : 'http://google.com', 
+      'site_url'              : 'index.html',
+      'ageGate_url'           : 'agegate.html',
+      'logo'                  : 'images/logos/logo.png', 
+      'title'                 : 'AGE GATE', 
+      'subtitle_1'            : 'You have to be over 18 to access this site', 
+      'subtitle_2'            : 'Please enter your Date of Birth', 
+      'formAction'            : '',
+      'placeholderDay'        : 'DD',
+      'placeholderMonth'      : 'MM',
+      'placeholderYear'       : 'YYYY',
+      'selectTitle'           : 'Select a Option',
+      'selectOptions'         : {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'},
+      'checkBoxLabel'         : 'Remember me the next time',
+      'submitBtnTxt'          : 'ENTER SITE',
+      'footerMsg'             : 'copyright © year brand name. all rights reserved',
 });
 ```
 

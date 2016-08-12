@@ -31,7 +31,7 @@ To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and 
 
 Now call the Age Gate initializer function and your Age verification page is ready.
 Since the cookie and localstorage verifiction for the Legal Age and the Remember Me is handeld on the client side,
-I is important to call the initializer on the <body> tag  in all the pages for your site.
+It is important to call the initializer on the 'body' tag  in all the pages for your site.
 
 ```javascript
 jQuery(document).ready(function($)

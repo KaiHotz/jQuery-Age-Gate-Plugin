@@ -49,16 +49,16 @@
 				#age_checker_header_message{
 					margin-bottom: 10px;
 					h1{
-						font-size: 4.5rem;
+						font-size: 4.6em;
 					}
 					p{
-						font-size: 1.2rem;
+						font-size: 1.2em;
 					}
 				}
 				#age_gate_error_message{
 					p{
 						color: red;
-						font-size: 1.2rem;
+						font-size: 1.2em;
 						margin-bottom: 10px;
 					}
 				}
@@ -116,7 +116,7 @@
 						margin:10px 0px; 
 						label{
 							margin-bottom: 5px;
-							font-size: 1.2rem;
+							font-size: 1.2em;
 							display: block;
 						}
 						select{
@@ -190,12 +190,13 @@
 			}
 		}
 		#age_gate_footer{
+			display: table-row;
 			text-align: center;
 			p{
 				color: #fff;
 				text-transform: uppercase;
 				margin:10px 0px;
-				font-size: 1rem 
+				font-size: 1em 
 			}
 		}
 	}

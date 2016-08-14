@@ -1,30 +1,22 @@
-html, body { font-size: 16px; margin: 0px; padding: 0px; }
+.page-age-gate * { outline: 0 !important; }
 
-@media screen and (max-width: 768px) { html, body { font-size: 12px; } }
+.page-age-gate *:focus .page-age-gate *:hover, .page-age-gate *:visited { outline: 0 !important; }
 
-@media screen and (max-width: 480px) { html, body { font-size: 10px; } }
+.page-age-gate a { text-decoration: none; outline: 0 !important; }
 
-@media screen and (max-width: 320px) { html, body { font-size: 8px; } }
+.page-age-gate a:hover, .page-age-gate a:active, .page-age-gate a:visited { outline: 0 !important; }
 
-* { outline: 0 !important; }
+.page-age-gate a img { border: none; outline: 0 !important; }
 
-*:focus *:hover, *:visited { outline: 0 !important; }
+.page-age-gate a[x-apple-data-detectors], .page-age-gate p[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
 
-a { text-decoration: none; outline: 0 !important; }
+.page-age-gate h1, .page-age-gate h2, .page-age-gate h3, .page-age-gate h4, .page-age-gate h5, .page-age-gate h6, .page-age-gate p { margin: 0px; padding: 0px; }
 
-a:hover, a:active, a:visited { outline: 0 !important; }
+.page-age-gate ul { list-style: none; }
 
-a img { border: none; outline: 0 !important; }
+.page-age-gate div, .page-age-gate nav, .page-age-gate article, .page-age-gate section, .page-age-gate header, .page-age-gate footer, .page-age-gate aside { display: block; box-sizing: border-box; }
 
-a[x-apple-data-detectors], p[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
-
-h1, h2, h3, h4, h5, h6, p { margin: 0px; padding: 0px; }
-
-ul { list-style: none; }
-
-div, nav, article, section, header, footer, aside { display: block; box-sizing: border-box; }
-
-input::-ms-clear { display: none !important; }
+.page-age-gate input::-ms-clear { display: none !important; }
 
 .page-age-gate { font-family: 'Arial'; background-image: url("../images/bg/bg_main.jpg"); background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; overflow-x: hidden; margin-top: 0px; color: #fff; font-size: 16px; margin: 0px; padding: 0px; }
 
@@ -46,11 +38,11 @@ input::-ms-clear { display: none !important; }
 
 .page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message { margin-bottom: 10px; }
 
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message h1 { font-size: 4.5rem; }
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message h1 { font-size: 4.6em; }
 
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message p { font-size: 1.2rem; }
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message p { font-size: 1.2em; }
 
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_gate_error_message p { color: red; font-size: 1.2rem; margin-bottom: 10px; }
+.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_gate_error_message p { color: red; font-size: 1.2em; margin-bottom: 10px; }
 
 .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form { width: 320px; margin: 0 auto; }
 
@@ -76,7 +68,7 @@ input::-ms-clear { display: none !important; }
 
 .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select { width: 100%; margin: 10px 0px; }
 
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select label { margin-bottom: 5px; font-size: 1.2rem; display: block; }
+.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select label { margin-bottom: 5px; font-size: 1.2em; display: block; }
 
 .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select { box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 0px 10px 3px; width: 100%; border: none; box-shadow: inset 1px 2px 2px #999; font-size: 26px; color: #23349c; height: 40px; background-image: url("../images/icons/arrow-down.png"); background-position: 94% center; background-size: contain; background-repeat: no-repeat; }
 
@@ -96,6 +88,6 @@ input::-ms-clear { display: none !important; }
 
 .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"]:active { position: relative; top: 3px; box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), inset 0 0px 3px rgba(0, 0, 0, 0.9); }
 
-.page-age-gate #age_gate #age_gate_footer { text-align: center; }
+.page-age-gate #age_gate #age_gate_footer { display: table-row; text-align: center; }
 
-.page-age-gate #age_gate #age_gate_footer p { color: #fff; text-transform: uppercase; margin: 10px 0px; font-size: 1rem; }
+.page-age-gate #age_gate #age_gate_footer p { color: #fff; text-transform: uppercase; margin: 10px 0px; font-size: 1em; }

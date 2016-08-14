@@ -1,51 +1,53 @@
-*{
- 	outline: 0 !important;
+.page-age-gate{
+	*{
+	 	outline: 0 !important;
 
- 	&:focus
- 	&:hover,
- 	&:visited,
- 	{
-    	outline: 0 !important;
+	 	&:focus
+	 	&:hover,
+	 	&:visited,
+	 	{
+	    	outline: 0 !important;
+		}
 	}
-}
 
-a{
-	text-decoration: none;
-	outline: 0 !important;
-	&:hover, &:active, &:visited{
+	a{
+		text-decoration: none;
 		outline: 0 !important;
+		&:hover, &:active, &:visited{
+			outline: 0 !important;
+		}
+		img{
+			border:none; 
+			outline: 0 !important;
+		}
 	}
-	img{
-		border:none; 
-		outline: 0 !important;
+
+	a[x-apple-data-detectors], p[x-apple-data-detectors] {
+	  color: inherit !important;
+	  text-decoration: none !important;
+	  font-size: inherit !important;
+	  font-family: inherit !important;
+	  font-weight: inherit !important;
+	  line-height: inherit !important;
 	}
-}
 
-a[x-apple-data-detectors], p[x-apple-data-detectors] {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-}
+	h1,h2,h3,h4,h5,h6,p{
+		margin: 0px;
+		padding: 0px;
+	}
 
-h1,h2,h3,h4,h5,h6,p{
-	margin: 0px;
-	padding: 0px;
-}
+	ul {
+		list-style:none;
+	}
 
-ul {
-	list-style:none;
-}
+	div,nav,article,section,header,footer,aside {
+		display: block;
+		box-sizing: border-box;
+	}
 
-div,nav,article,section,header,footer,aside {
-	display: block;
-	box-sizing: border-box;
-}
-
-input{
-	&::-ms-clear { 
-		display: none !important; 
+	input{
+		&::-ms-clear { 
+			display: none !important; 
+		}
 	}
 }

@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
 > ### Note for local development:
 > In Case you are working in an local enviroment, Make shure your site is running on an VIRTUAL HOST 
 > so the redirection at the cookie and local storage detection, works correctly !!!
-> Otherwise the Redirection for the Remeber me option or if you entered an age less than the Legal Age declared and come back to any of the internal pages of the site, will not work
+> Otherwise the Redirection for the Remeber me option or if you entered an age less than the Legal Age declared and come back to any of the internal pages of the site, will not work.
 
 ## Customizing
 

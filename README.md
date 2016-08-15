@@ -60,6 +60,7 @@ All of the options below are available to customize Age Gate Plugin.
 | `site_url`            | 'index.html'                                                          | string | Your site index page                            |
 | `ageGate_url`         | 'agegate.html'                                                        | string | URL for the page where the Age Gate is shown    |
 | `logo`                | 'images/logos/logo.png'                                               | string | URL for your Logo images                        |
+| `bg_image`            | 'images/bg/bg_main.jpg',                                              | string | URL the Age Gate page background images         |
 | `title`               | 'AGE GATE'                                                            | string | Title to be shown on the Age Gate pages         |
 | `subtitle_1`          | 'You have to be over 18 to access this site'                          | string | First subtitle                                  |
 | `subtitle_2`          | 'Please enter your Date of Birth'                                     | string | Second subtitle                                 |
@@ -87,6 +88,7 @@ $('body').ageGate({
       'site_url'              : 'index.html',
       'ageGate_url'           : 'agegate.html',
       'logo'                  : 'images/logos/logo.png', 
+      'bg_image'              : 'images/bg/bg_main.jpg',
       'title'                 : 'AGE GATE', 
       'subtitle_1'            : 'You have to be over 18 to access this site', 
       'subtitle_2'            : 'Please enter your Date of Birth', 

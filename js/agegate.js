@@ -47,6 +47,7 @@
                 'site_url'              : 'index.html',
                 'ageGate_url'           : 'agegate.html',
                 'logo'                  : 'images/logos/logo.png',
+                'bg_image'              : 'images/bg/bg_main.jpg',
                 'title'                 : 'AGE GATE',
                 'subtitle_1'            : 'You have to be over 18 to access this site',
                 'subtitle_2'            : 'Please enter your Date of Birth',
@@ -436,7 +437,8 @@
                 }
                 else
                 {
-                    that.buildAgegate();  
+                    that.buildAgegate();
+                    $('.page-age-gate').css('background-image','url('+config.bg_image+')');  
                 }                   
             }
             else if(that.getCookie('age_gate') === '' || that.getCookie('age_gate') == 'null')

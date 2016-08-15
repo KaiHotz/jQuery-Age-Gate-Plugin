@@ -415,7 +415,9 @@
 
         that.buildAgegate = function()
         {
-            that.addClass('page-age-gate').prepend(that.setHtml());
+            $('html').find('body').html('');
+            $('body').addClass('page-age-gate').prepend(that.setHtml());
+            $('.page-age-gate').css('background-image','url('+config.bg_image+')');  
             that.setSelectOptions();
             that.formReset();
             that.checkAgeOk();
@@ -438,7 +440,6 @@
                 else
                 {
                     that.buildAgegate();
-                    $('.page-age-gate').css('background-image','url('+config.bg_image+')');  
                 }                   
             }
             else if(that.getCookie('age_gate') === '' || that.getCookie('age_gate') == 'null')

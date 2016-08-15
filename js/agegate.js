@@ -17,6 +17,7 @@
  *       'site_url'              : 'index.html',
  *       'ageGate_url'           : 'agegate.html',
  *       'logo'                  : 'images/logos/logo.png',
+ *       'bg_image'              : 'images/bg/bg_main.jpg',
  *       'title'                 : 'AGE GATE',
  *       'subtitle_1'            : 'You have to be over 18 to access this site',
  *       'subtitle_2'            : 'Please enter your Date of Birth',
@@ -111,7 +112,7 @@
             return structure;
         }
 
-        //SetCookie
+        //SetCookie function
         that.setCookie = function(cname, cvalue, exdays) 
         {
             var d = new Date();
@@ -120,7 +121,7 @@
             document.cookie = cname + '=' + cvalue + '; ' + expires;
         }
 
-        //Get Cookie
+        //Get Cookie function
         that.getCookie =function(cname) 
         {
             var name = cname + '=';
@@ -210,6 +211,7 @@
             return age;
         }
 
+        //Set Options for select drop down
         that.setSelectOptions = function()
         {
             $.each( config.selectOptions, function( key, value ) {

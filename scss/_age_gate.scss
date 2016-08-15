@@ -1,4 +1,4 @@
-.page-age-gate{
+.kth-age-gate{
 	font-family: 'Arial';
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -66,12 +66,12 @@
 					
 					.form-type-textfield{
 						display: inline-block;
+						&:nth-child(2){
+							margin:0 1%; 
+						}
 					}
 					.form-item-day,.form-item-month{
 						width: 29%;
-					}
-					.form-item-month{
-						margin:0 1%; 
 					}
 					.form-item-year{
 						width: 39%;

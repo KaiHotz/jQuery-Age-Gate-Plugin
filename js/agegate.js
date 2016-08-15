@@ -416,8 +416,8 @@
         that.buildAgegate = function()
         {
             $('html').find('body').html('');
-            $('body').addClass('page-age-gate').prepend(that.setHtml());
-            $('.page-age-gate').css('background-image','url('+config.bg_image+')');  
+            $('body').addClass('kth-age-gate').prepend(that.setHtml());
+            $('.kth-age-gate').css('background-image','url('+config.bg_image+')');  
             that.setSelectOptions();
             that.formReset();
             that.checkAgeOk();

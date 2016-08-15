@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('default', ()=> {
   gulp.src('scss/agegate.scss')
     .pipe(sass({
-        outputStyle: 'compact',
+        //outputStyle: 'compact',
         sourceComments: false
       }))
     .pipe(autoprefixer({

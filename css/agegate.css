@@ -1,93 +1,209 @@
-.page-age-gate * { outline: 0 !important; }
+.kth-age-gate * {
+  outline: 0 !important; }
+  .kth-age-gate *:focus .kth-age-gate *:hover, .kth-age-gate *:visited {
+    outline: 0 !important; }
 
-.page-age-gate *:focus .page-age-gate *:hover, .page-age-gate *:visited { outline: 0 !important; }
+.kth-age-gate a {
+  text-decoration: none;
+  outline: 0 !important; }
+  .kth-age-gate a:hover, .kth-age-gate a:active, .kth-age-gate a:visited {
+    outline: 0 !important; }
+  .kth-age-gate a img {
+    border: none;
+    outline: 0 !important; }
 
-.page-age-gate a { text-decoration: none; outline: 0 !important; }
+.kth-age-gate a[x-apple-data-detectors], .kth-age-gate p[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important; }
 
-.page-age-gate a:hover, .page-age-gate a:active, .page-age-gate a:visited { outline: 0 !important; }
+.kth-age-gate h1, .kth-age-gate h2, .kth-age-gate h3, .kth-age-gate h4, .kth-age-gate h5, .kth-age-gate h6, .kth-age-gate p {
+  margin: 0px;
+  padding: 0px; }
 
-.page-age-gate a img { border: none; outline: 0 !important; }
+.kth-age-gate ul {
+  list-style: none; }
 
-.page-age-gate a[x-apple-data-detectors], .page-age-gate p[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+.kth-age-gate div, .kth-age-gate nav, .kth-age-gate article, .kth-age-gate section, .kth-age-gate header, .kth-age-gate footer, .kth-age-gate aside {
+  display: block;
+  box-sizing: border-box; }
 
-.page-age-gate h1, .page-age-gate h2, .page-age-gate h3, .page-age-gate h4, .page-age-gate h5, .page-age-gate h6, .page-age-gate p { margin: 0px; padding: 0px; }
+.kth-age-gate input::-ms-clear {
+  display: none !important; }
 
-.page-age-gate ul { list-style: none; }
-
-.page-age-gate div, .page-age-gate nav, .page-age-gate article, .page-age-gate section, .page-age-gate header, .page-age-gate footer, .page-age-gate aside { display: block; box-sizing: border-box; }
-
-.page-age-gate input::-ms-clear { display: none !important; }
-
-.page-age-gate { font-family: 'Arial'; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; overflow-x: hidden; color: #fff; font-size: 16px; margin: 0px; padding: 0px; }
-
-@media screen and (max-width: 768px) { .page-age-gate { font-size: 12px; } }
-
-@media screen and (max-width: 480px) { .page-age-gate { font-size: 10px; } }
-
-@media screen and (max-width: 320px) { .page-age-gate { font-size: 8px; } }
-
-.page-age-gate #age_gate { display: table; height: 100vh; width: 100%; background-repeat: no-repeat; background-size: 100%; padding-top: 30px; }
-
-.page-age-gate #age_gate #age_gate_logo { display: table-row; text-align: center; }
-
-.page-age-gate #age_gate #age_gate_logo img { width: 100px; }
-
-.page-age-gate #age_gate #age_gate_container { display: table-row; position: relative; height: 100%; background-color: transparent; width: 100%; text-align: center; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget { position: absolute; top: 10%; left: 50%; -webkit-transform: translate(-50%, -10%); transform: translate(-50%, -10%); -ms-transform: translate(-50%, -10%); }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message { margin-bottom: 10px; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message h1 { font-size: 4.6em; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message p { font-size: 1.2em; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget #age_gate_error_message p { color: red; font-size: 1.2em; margin-bottom: 10px; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form { width: 320px; margin: 0 auto; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-textfield { display: inline-block; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-day, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-month { width: 29%; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-month { margin: 0 1%; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-year { width: 39%; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"], .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"] { box-sizing: border-box; -webkit-appearance: textfield !important; -moz-appearance: textfield !important; appearance: textfield !important; width: 100%; text-align: center; color: #23349c; border: none; line-height: 40px; font-size: 40px; height: 70px; box-shadow: inset 1px 2px 2px #999; font-weight: bold; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-webkit-input-placeholder, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-webkit-input-placeholder { color: #23349c; opacity: 1; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]:-moz-placeholder, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]:-moz-placeholder { /* Firefox 18- */ color: #23349c; opacity: 1; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-moz-placeholder, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-moz-placeholder { /* Firefox 19+ */ color: #23349c; opacity: 1; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]:-ms-input-placeholder, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]:-ms-input-placeholder { color: #23349c; opacity: 1; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-webkit-inner-spin-button, .page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select { width: 100%; margin: 10px 0px; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select label { margin-bottom: 5px; font-size: 1.2em; display: block; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select { box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 0px 10px 3px; width: 100%; border: none; box-shadow: inset 1px 2px 2px #999; font-size: 26px; color: #23349c; height: 40px; background-image: url("../images/icons/arrow-down.png"); background-position: 94% center; background-size: contain; background-repeat: no-repeat; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select::-ms-expand { display: none !important; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me { width: 100%; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label { display: inline-block; cursor: pointer; position: relative; padding-left: 30px; font-size: 13px; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label:before { content: ""; display: inline-block; width: 20px; height: 13px; position: absolute; left: 0; bottom: 1px; background-color: #fff; box-shadow: inset 1px 2px 2px #999; color: #23349c; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox] { display: none; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox]:checked + label:before { content: "\2713"; font-size: 12px; text-align: center; line-height: 18px; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"] { cursor: pointer; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 5px 20px; margin-top: 20px; background-color: #23349c; color: white; min-width: 85px; font-size: 21px; border: none; }
-
-.page-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"]:active { position: relative; top: 3px; box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), inset 0 0px 3px rgba(0, 0, 0, 0.9); }
-
-.page-age-gate #age_gate #age_gate_footer { display: table-row; text-align: center; }
-
-.page-age-gate #age_gate #age_gate_footer p { color: #fff; text-transform: uppercase; margin: 10px 0px; font-size: 1em; }
+.kth-age-gate {
+  font-family: 'Arial';
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (max-width: 768px) {
+    .kth-age-gate {
+      font-size: 12px; } }
+  @media screen and (max-width: 480px) {
+    .kth-age-gate {
+      font-size: 10px; } }
+  @media screen and (max-width: 320px) {
+    .kth-age-gate {
+      font-size: 8px; } }
+  .kth-age-gate #age_gate {
+    display: table;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px; }
+    .kth-age-gate #age_gate #age_gate_logo {
+      display: table-row;
+      text-align: center; }
+      .kth-age-gate #age_gate #age_gate_logo img {
+        width: 100px; }
+    .kth-age-gate #age_gate #age_gate_container {
+      display: table-row;
+      position: relative;
+      height: 100%;
+      background-color: transparent;
+      width: 100%;
+      text-align: center; }
+      .kth-age-gate #age_gate #age_gate_container #age_gate_widget {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -10%);
+                transform: translate(-50%, -10%);
+        -ms-transform: translate(-50%, -10%); }
+        .kth-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message {
+          margin-bottom: 10px; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message h1 {
+            font-size: 4.6em; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget #age_checker_header_message p {
+            font-size: 1.2em; }
+        .kth-age-gate #age_gate #age_gate_container #age_gate_widget #age_gate_error_message p {
+          color: red;
+          font-size: 1.2em;
+          margin-bottom: 10px; }
+        .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form {
+          width: 320px;
+          margin: 0 auto; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-textfield {
+            display: inline-block; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-textfield:nth-child(2) {
+              margin: 0 1%; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-day, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-month {
+            width: 29%; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-item-year {
+            width: 39%; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"], .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"] {
+            box-sizing: border-box;
+            -webkit-appearance: textfield !important;
+               -moz-appearance: textfield !important;
+                    appearance: textfield !important;
+            width: 100%;
+            text-align: center;
+            color: #23349c;
+            border: none;
+            line-height: 40px;
+            font-size: 40px;
+            height: 70px;
+            box-shadow: inset 1px 2px 2px #999;
+            font-weight: bold; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-webkit-input-placeholder, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-webkit-input-placeholder {
+              color: #23349c;
+              opacity: 1; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]:-moz-placeholder, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]:-moz-placeholder {
+              /* Firefox 18- */
+              color: #23349c;
+              opacity: 1; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-moz-placeholder, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-moz-placeholder {
+              /* Firefox 19+ */
+              color: #23349c;
+              opacity: 1; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]:-ms-input-placeholder, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]:-ms-input-placeholder {
+              color: #23349c;
+              opacity: 1; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="number"]::-webkit-inner-spin-button, .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="tel"]::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select {
+            width: 100%;
+            margin: 10px 0px; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select label {
+              margin-bottom: 5px;
+              font-size: 1.2em;
+              display: block; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select {
+              box-sizing: border-box;
+              -webkit-appearance: none;
+                 -moz-appearance: none;
+                      appearance: none;
+              padding: 0px 10px 3px;
+              width: 100%;
+              border: none;
+              box-shadow: inset 1px 2px 2px #999;
+              font-size: 26px;
+              color: #23349c;
+              height: 40px;
+              background-image: url("../images/icons/arrow-down.png");
+              background-position: 94% center;
+              background-size: contain;
+              background-repeat: no-repeat; }
+              .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-select select::-ms-expand {
+                display: none !important; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me {
+            width: 100%; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label {
+              display: inline-block;
+              cursor: pointer;
+              position: relative;
+              padding-left: 30px;
+              font-size: 13px; }
+              .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me label:before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 13px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #fff;
+                box-shadow: inset 1px 2px 2px #999;
+                color: #23349c; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox] {
+              display: none; }
+              .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form .form-type-checkbox.form-item-remember-me input[type=checkbox]:checked + label:before {
+                content: "\2713";
+                font-size: 12px;
+                text-align: center;
+                line-height: 18px; }
+          .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"] {
+            cursor: pointer;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            padding: 5px 20px;
+            margin-top: 20px;
+            background-color: #23349c;
+            color: white;
+            min-width: 85px;
+            font-size: 21px;
+            border: none; }
+            .kth-age-gate #age_gate #age_gate_container #age_gate_widget form#age_gate_form input[type="submit"]:active {
+              position: relative;
+              top: 3px;
+              box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), inset 0 0px 3px rgba(0, 0, 0, 0.9); }
+    .kth-age-gate #age_gate #age_gate_footer {
+      display: table-row;
+      text-align: center; }
+      .kth-age-gate #age_gate #age_gate_footer p {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 10px 0px;
+        font-size: 1em; }

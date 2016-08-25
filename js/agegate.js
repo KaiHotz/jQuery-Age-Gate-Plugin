@@ -391,12 +391,14 @@
             });
         }
 
+        //cookie & Local Storage Reset
         that.storageCookyReset = function()
         {
             localStorage.removeItem('remember_me');
             that.setCookie('age_gate',null);
         }
 
+        //Chek Leagal Age underage & set cookie
         that.checkAgeOk = function()
         {
             if(that.getCookie('age_gate') && that.getCookie('age_gate') === 'underage')
@@ -412,6 +414,7 @@
             }
         }
 
+        //Returns actual Domain
         that.getDomain = function()
         {
             return $(location).attr('hostname');
@@ -426,6 +429,7 @@
             }  
         }
 
+        //Build HTML Structure with functionality
         that.buildAgegate = function()
         {
             $('html').find('body').html('');
@@ -441,6 +445,7 @@
             that.ageGateSubmit();
         }
 
+        //Initilaces The Plugin
         that.init = function()
         {
             if(window.location == 'http://'+that.getDomain()+'/'+config.ageGate_url)

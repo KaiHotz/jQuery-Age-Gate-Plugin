@@ -145,7 +145,7 @@
         //underage 
         that.illegalAge = function()
         {
-            if(that.hasClass('page-age-gate'))
+            if(that.hasClass('kth-age-gate'))
             {
                 
                 $('#age_gate_error_message').html('<p>'+config.underage_msg+'</p>');
@@ -434,7 +434,8 @@
         {
             $('html').find('body').html('');
             $('body').addClass('kth-age-gate').prepend(that.setHtml());
-            $('.kth-age-gate').css('background-image','url('+config.bg_image+')');  
+            $('.kth-age-gate').css('background-image','url('+config.bg_image+')');
+            //that.storageCookyReset();  //Reset cookie and Local Storage, only uncomment if needed for develop reasons
             that.setSelectOptions();
             that.formReset();
             that.checkAgeOk();

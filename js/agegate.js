@@ -34,7 +34,8 @@
  *
  */
 
-(function($){
+(function($)
+{
 
     $.fn.ageGate = function(settings)
     {
@@ -126,12 +127,15 @@
         {
             var name = cname + '=';
             var ca = document.cookie.split(';');
-            for(var i = 0; i < ca.length; i++) {
+            for(var i = 0; i < ca.length; i++) 
+            {
                 var c = ca[i];
-                while (c.charAt(0) == ' ') {
+                while (c.charAt(0) == ' ') 
+                {
                     c = c.substring(1);
                 }
-                if (c.indexOf(name) == 0) {
+                if (c.indexOf(name) == 0) 
+                {
                     return c.substring(name.length, c.length);
                 }
             }
@@ -153,7 +157,8 @@
 
             setCookie('age_gate','underage', 2);
 
-            setTimeout(function(){
+            setTimeout(function()
+            {
                 window.location.href = config.underage_url;
             }, 1000);
 
@@ -166,11 +171,14 @@
 
             var checked = $('#age_checker_remember_me').is(':checked');
 
-            if(checked) {
+            if(checked) 
+            {
             
                localStorage.setItem('remember_me','1');
             
-            } else {
+            } 
+            else 
+            {
             
                localStorage.setItem('remember_me','0');
             
@@ -214,7 +222,8 @@
         //Set Options for select drop down
         that.setSelectOptions = function()
         {
-            $.each( config.selectOptions, function( key, value ) {
+            $.each( config.selectOptions, function( key, value ) 
+            {
                 $('#age_gate_form select').append('<option value="'+key+'">'+value+'</option>');
             });
         }
@@ -332,31 +341,32 @@
         //Submit function
         that.ageGateSubmit = function()
         {
-            $('#age_gate_form input[type="submit"]').focus().click( function(event) {
+            $('#age_gate_form input[type="submit"]').focus().click( function(event) 
+            {
                 event.preventDefault();
 
                 //Required Fields Validation
                 $('.required').each(function(index, el) {
 
-                    if($(this).val() == "" || $(this).val() == $(this).attr('placeholder')){
-
-                        $(this).css({
-                            'background-color':'#FF9F9F', 
-                            'color':'#CC3333'
-                        });
-                        
-                        $('#age_gate_error_message').html('<p>'+config.required_fields_msg+'</p>')
-                        
-                        error = true;
-                    }
-                    else{
-
-                        $(this).css({
-                            'background-color':'#B8F5B1',
-                            'color':'#000'
-                        });
-                        
-                        error = false;
+                    switch($(this).val()){
+                        case "":
+                        case $(this).attr('placeholder'):
+                            $(this).css({
+                                'background-color':'#FF9F9F', 
+                                'color':'#CC3333'
+                            });
+                            
+                            $('#age_gate_error_message').html('<p>'+config.required_fields_msg+'</p>')
+                            
+                            error = true;
+                        break;
+                        default: 
+                            $(this).css({
+                                'background-color':'#B8F5B1',
+                                'color':'#000'
+                            });
+                            
+                            error = false; 
                     }
                 });
 
@@ -389,7 +399,8 @@
 
         that.checkAgeOk = function()
         {
-            if(that.getCookie('age_gate') && that.getCookie('age_gate') === 'underage'){
+            if(that.getCookie('age_gate') && that.getCookie('age_gate') === 'underage')
+            {
 
                 if(localStorage.getItem('remember_me')){
                     localStorage.removeItem('remember_me');

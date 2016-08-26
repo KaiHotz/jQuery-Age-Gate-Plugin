@@ -24,7 +24,7 @@ gulp.task('default', ()=> {
 gulp.task('watch',()=> {
 
   // Watch .scss files
-  gulp.watch('scss/**/*.scss', ['default']);
+  gulp.watch('scss/*.scss', ['default']);
 
   // Create LiveReload server
   livereload.listen();

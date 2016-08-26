@@ -24,13 +24,13 @@ gulp.task('default', ()=> {
 gulp.task('watch',()=> {
 
   // Watch .scss files
-  gulp.watch('scss/site/**/*.scss', ['default']);
+  gulp.watch('scss/**/*.scss', ['default']);
 
   // Create LiveReload server
   livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch(['css/site/**']).on('change', livereload.changed);
+  gulp.watch(['css/**']).on('change', livereload.changed);
 
 });
 

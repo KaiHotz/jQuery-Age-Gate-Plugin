@@ -2,7 +2,7 @@
 
  jQuery Age Gate v1.0.0
 
-Very configuralable Aage verification "Age Gate or agegate" plugin. 
+Very configuralable Aage verification "Age Gate or Age Checker" plugin. 
 Required by some content providers for mature content.
 Uses Cookies and localstorage.
 [Age Gate](https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin)

@@ -69,7 +69,7 @@ All of the options below are available to customize Age Gate Plugin.
 | `placeholderMonth`    | 'MM'                                                                  | string | Placeholder for the Month field                 |
 | `placeholderYear`     | 'YYYY'                                                                | string | Placeholder for the Year field                  |
 | `selectTitle`         | 'Select an Option'                                                    | string | Placeholder drop down selecter                  |
-| `selectOptions`       | {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'} | array  | Key=>Value vor the select options               |
+| `selectOptions`       | {'op1':'Option 1','op2':'Option 2','op3':'Option 3','op4':'Option 4'} | ojbject| Key=>Value for the select options               |
 | `checkBoxLabel`       | 'Remember me the next time'                                           | string | Lable for the remember me checkbox              |
 | `submitBtnTxt`        | 'ENTER SITE'                                                          | string | Submit button text                              |
 | `footerMsg`           | 'copyright © year brand name. all rights reserved'                    | string | Footer text                                     |

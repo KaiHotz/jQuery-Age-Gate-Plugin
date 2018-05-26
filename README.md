@@ -2,12 +2,12 @@
 
  jQuery Age Gate v1.0.0
 
-Very configuralable Aage verification "Age Gate or Age Checker" plugin. 
+Very configuralable Aage verification "Age Gate or Age Checker" plugin.
 Required by some content providers for mature content.
 Uses Cookies and localstorage.
-[Age Gate](https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin)
+[Age Gate](https://github.com/KaiHotz/jQuery-Age-Gate-Plugin)
 
- by Kai Hotz AKA [SpecialKcl](https://github.com/SpecialKcl) 
+ by [Kai Hotz](https://github.com/KaiHotz)
 
 ## How to Use:
 
@@ -21,7 +21,7 @@ To use Age Gate Plugin, you’ll need to make sure both the Age Gate Plugin and 
 
 <!--  jQuery 1.9+  -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
- 
+
 <!-- Include js plugin -->
 <script src="js/agegate.js"></script>
 ```
@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 });
 ```
 > ### Note for local development:
-> In Case you are working in an local enviroment, Make shure your site is running on an VIRTUAL HOST 
+> In Case you are working in an local enviroment, Make shure your site is running on an VIRTUAL HOST
 > so the redirection at the cookie and local storage detection, works correctly !!!
 > Otherwise the Redirection for the Remeber me option or if you entered an age less than the Legal Age declared and come back to any of the internal pages of the site, will not work.
 
@@ -83,15 +83,15 @@ Age Gate Plugin default settings
 $('body').ageGate({
       'leagal_age'            : 18,
       'required_fields_msg'   : 'All Fields are mandatory',
-      'underage_msg'          : 'You have to be over 18 to enter this site', 
-      'underage_url'          : 'http://google.com', 
+      'underage_msg'          : 'You have to be over 18 to enter this site',
+      'underage_url'          : 'http://google.com',
       'site_url'              : 'index.html',
       'ageGate_url'           : 'agegate.html',
-      'logo'                  : 'images/logos/logo.png', 
+      'logo'                  : 'images/logos/logo.png',
       'bg_image'              : 'images/bg/bg_main.jpg',
-      'title'                 : 'AGE GATE', 
-      'subtitle_1'            : 'You have to be over 18 to access this site', 
-      'subtitle_2'            : 'Please enter your Date of Birth', 
+      'title'                 : 'AGE GATE',
+      'subtitle_1'            : 'You have to be over 18 to access this site',
+      'subtitle_2'            : 'Please enter your Date of Birth',
       'formAction'            : '',
       'placeholderDay'        : 'DD',
       'placeholderMonth'      : 'MM',

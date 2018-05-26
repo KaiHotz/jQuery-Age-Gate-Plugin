@@ -1,12 +1,12 @@
 /**
  * jQuery Age Gate v1.0.0
  *
- * Very configuralable Aage verification "Age Gate or Age Checker" plugin. 
+ * Very configuralable Aage verification "Age Gate or Age Checker" plugin.
  * Required by some content providers for mature content.
  * Uses Cookies and localstorage
- * https://github.com/SpecialKcl/jQuery-Age-Gate-Plugin
+ * https://github.com/KaiHotz/jQuery-Age-Gate-Plugin
  *
- * by Kai Hotz AKA SpecialKcl https://github.com/SpecialKcl
+ * by Kai Hotz https://github.com/KaiHotz
  *
  * Useage:
  *   $('body').ageGate({
@@ -67,7 +67,7 @@
         {
             $.extend(config, settings);
         }
- 
+
         // Build the container and html structure
         that.setHtml = function()
         {
@@ -99,7 +99,7 @@
                 structure  += '</select>';
                 structure  += '</div>';
                 structure  += '<div class="form-item form-type-checkbox form-item-remember-me">';
-                structure  += '<input id="age_checker_remember_me" class="form-checkbox" name="remember_me" value="1"  type="checkbox">';  
+                structure  += '<input id="age_checker_remember_me" class="form-checkbox" name="remember_me" value="1"  type="checkbox">';
                 structure  += '<label tabindex="5" class="option" for="age_checker_remember_me">'+config.checkBoxLabel+'</label>';
                 structure  += '</div>';
                 structure  += '<input type="submit" tabindex="6"  value="'+config.submitBtnTxt+'">';
@@ -114,7 +114,7 @@
         }
 
         //SetCookie function
-        that.setCookie = function(cname, cvalue, exdays) 
+        that.setCookie = function(cname, cvalue, exdays)
         {
             var d = new Date();
             d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -123,18 +123,18 @@
         }
 
         //Get Cookie function
-        that.getCookie =function(cname) 
+        that.getCookie =function(cname)
         {
             var name = cname + '=';
             var ca = document.cookie.split(';');
-            for(var i = 0; i < ca.length; i++) 
+            for(var i = 0; i < ca.length; i++)
             {
                 var c = ca[i];
-                while (c.charAt(0) == ' ') 
+                while (c.charAt(0) == ' ')
                 {
                     c = c.substring(1);
                 }
-                if (c.indexOf(name) == 0) 
+                if (c.indexOf(name) == 0)
                 {
                     return c.substring(name.length, c.length);
                 }
@@ -142,12 +142,12 @@
             return "";
         }
 
-        //underage 
+        //underage
         that.illegalAge = function()
         {
             if(that.hasClass('kth-age-gate'))
             {
-                
+
                 $('#age_gate_error_message').html('<p>'+config.underage_msg+'</p>');
 
                 $('form#age_gate_form').remove();
@@ -171,17 +171,17 @@
 
             var checked = $('#age_checker_remember_me').is(':checked');
 
-            if(checked) 
+            if(checked)
             {
-            
+
                localStorage.setItem('remember_me','1');
-            
-            } 
-            else 
+
+            }
+            else
             {
-            
+
                localStorage.setItem('remember_me','0');
-            
+
             }
         }
 
@@ -196,7 +196,7 @@
             else
             {
                 maxlength = el.attr('maxlength');
-            }   
+            }
 
             if(el.val().length == maxlength)
             {
@@ -209,11 +209,11 @@
         //Age Calculation
         that.AgeCheck = function(day, month, year)
         {
-        
+
             dob   = new Date(year+'-'+month+'-'+day),
-            
+
             today = new Date(),
-            
+
             age   = Math.floor((today-dob) / (365.25 * 24 * 60 * 60 * 1000));
 
             return age;
@@ -222,7 +222,7 @@
         //Set Options for select drop down
         that.setSelectOptions = function()
         {
-            $.each( config.selectOptions, function( key, value ) 
+            $.each( config.selectOptions, function( key, value )
             {
                 $('#age_gate_form select').append('<option value="'+key+'">'+value+'</option>');
             });
@@ -248,20 +248,20 @@
         //Placeholder reset
         that.placeholderReset = function()
         {
-            $('#age_gate_form .numeric').each(function(index, el) 
-            {           
+            $('#age_gate_form .numeric').each(function(index, el)
+            {
                 //data placeholder
                 $(this).data('placeholder', $(this).attr('placeholder'));
 
                 //show and hide placeholder
                 placeholder = $(this).attr('placeholder');
 
-                $(this).focus(function(event) { 
-                    $(this).val('').attr('placeholder', ''); 
+                $(this).focus(function(event) {
+                    $(this).val('').attr('placeholder', '');
                 });
 
-                $(this).blur(function(event) { 
-                    $(this).attr('placeholder', $(this).data('placeholder')); 
+                $(this).blur(function(event) {
+                    $(this).attr('placeholder', $(this).data('placeholder'));
                 });
 
             });
@@ -270,57 +270,57 @@
         //Validation accept only numbers
         that.numeriValidation = function()
         {
-          $(document).on('keyup','#age_gate_form .numeric', function() 
+          $(document).on('keyup','#age_gate_form .numeric', function()
             {
                 var numericheck = $.isNumeric($(this).val());
 
                 var val = $(this).val();
-                
-                if(!numericheck) { 
-                    $(this).val(''); 
+
+                if(!numericheck) {
+                    $(this).val('');
                 }
-            });  
+            });
         }
 
         //Date Validations
         that.dateValidations = function()
         {
             //Day date Validation limit day no more than 31
-            $(document).on('keyup','#age_gate_day', function() 
+            $(document).on('keyup','#age_gate_day', function()
             {
-                if($(this).val() > 31){ 
-                    $(this).val('').focus(); 
-                    return false; 
+                if($(this).val() > 31){
+                    $(this).val('').focus();
+                    return false;
                 }
-                
+
                 that.autoTab($(this));
             });
 
             //Mont date validation limit month no more than 12
-            $(document).on('keyup','#age_gate_month', function() 
+            $(document).on('keyup','#age_gate_month', function()
             {
-                if($(this).val() > 12) { 
-                    $(this).val('').focus();  
-                    return false; 
+                if($(this).val() > 12) {
+                    $(this).val('').focus();
+                    return false;
                 }
 
                 that.autoTab($(this));
             });
 
             //Year validation limit year no more than current
-            $(document).on('keyup','#age_gate_year', function() 
+            $(document).on('keyup','#age_gate_year', function()
             {
                 var current = new Date().getFullYear();
 
-                if($(this).val() > current) { 
-                    $(this).val('').focus(); 
-                    return false; 
+                if($(this).val() > current) {
+                    $(this).val('').focus();
+                    return false;
                 }
 
                 that.autoTab($(this));
             });
 
-            $(document).on('blur','#age_gate_year', function() 
+            $(document).on('blur','#age_gate_year', function()
             {
                 if($(this).attr('maxlength') == undefined)
                 {
@@ -329,19 +329,19 @@
                 else
                 {
                     maxlength = $(this).attr('maxlength');
-                }   
+                }
 
                 if($(this).val().length != maxlength)
                 {
-                    $(this).val('').focus(); 
+                    $(this).val('').focus();
                 }
-            });     
+            });
         }
 
         //Submit function
         that.ageGateSubmit = function()
         {
-            $('#age_gate_form input[type="submit"]').focus().click( function(event) 
+            $('#age_gate_form input[type="submit"]').focus().click( function(event)
             {
                 event.preventDefault();
 
@@ -352,29 +352,29 @@
                         case "":
                         case $(this).attr('placeholder'):
                             $(this).css({
-                                'background-color':'#FF9F9F', 
+                                'background-color':'#FF9F9F',
                                 'color':'#CC3333'
                             });
-                            
+
                             $('#age_gate_error_message').html('<p>'+config.required_fields_msg+'</p>')
-                            
+
                             error = true;
                         break;
-                        default: 
+                        default:
                             $(this).css({
                                 'background-color':'#B8F5B1',
                                 'color':'#000'
                             });
-                            
-                            error = false; 
+
+                            error = false;
                     }
                 });
 
                 //Leagal Age Validation
                 var age = that.AgeCheck($('#age_gate_day').val(), $('#age_gate_day').val(), $('#age_gate_year').val());
-                                
+
                 if(age<config.leagal_age){
-                     
+
                     that.illegalAge();
                 }
 
@@ -384,7 +384,7 @@
                     that.setCookie('age_gate','legal',1);
 
                     that.remeberMe();
-                    
+
                     window.location.href = config.site_url;
                 }
 
@@ -407,7 +407,7 @@
                 if(localStorage.getItem('remember_me')){
                     localStorage.removeItem('remember_me');
                 }
-                
+
                 that.illegalAge();
 
                 return;
@@ -420,13 +420,13 @@
             return $(location).attr('hostname');
         }
 
-        //Chek remember me 
+        //Chek remember me
         that.checkRememberMe = function()
         {
             if(localStorage.getItem('remember_me') && localStorage.getItem('remember_me')==='1')
             {
                 window.location = 'http://'+that.getDomain();
-            }  
+            }
         }
 
         //Build HTML Structure with functionality
@@ -439,10 +439,10 @@
             that.setSelectOptions();
             that.formReset();
             that.checkAgeOk();
-            that.mobileKeyboard();                   
+            that.mobileKeyboard();
             that.placeholderReset();
             that.numeriValidation();
-            that.dateValidations();                    
+            that.dateValidations();
             that.ageGateSubmit();
         }
 
@@ -451,15 +451,15 @@
         {
             if(window.location == 'http://'+that.getDomain()+'/'+config.ageGate_url)
             {
-                
-                if(that.getCookie('age_gate') === 'legal' && localStorage.getItem('remember_me') && localStorage.getItem('remember_me')==='1') 
+
+                if(that.getCookie('age_gate') === 'legal' && localStorage.getItem('remember_me') && localStorage.getItem('remember_me')==='1')
                 {
                    window.location = 'http://'+that.getDomain();
                 }
                 else
                 {
                     that.buildAgegate();
-                }                   
+                }
             }
             else if(that.getCookie('age_gate') === '' || that.getCookie('age_gate') == 'null')
             {

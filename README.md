@@ -1,3 +1,5 @@
+## INFO : Deprecated, not maintained anymore
+
 # jQuery Age Gate Plugin
 
  jQuery Age Gate v1.0.0
